@@ -1,0 +1,15 @@
+import math
+n = int(input("Введите число целых чисел N:"))
+sum_cubes = 0
+count_odd_pos = 0
+print("Введите числа по одному:") 
+for i in range(n):
+  x = int(input())
+
+if x < 0 and x % 2 == 0:
+    sum_cubes += x**3
+
+if x > 0 and x % 2 != 0:
+    count_odd_pos += 1
+print("Сумма кубов четных отрицательных чисел:", sum_cubes)
+print("Колличество нечетных положительных чисел:", count_odd_pos)

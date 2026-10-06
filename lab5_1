@@ -1,0 +1,13 @@
+import math
+n=int(input("Введите колличество чисел N: "))
+
+total_sum = 0
+
+print("Введите числа по одному:")
+
+for _ in range(n):
+  num = int(input())
+
+  if num % 2 != 0 and num % 3 == 0:
+     total_sum += num
+print(f"Сумма нечетных чисел, делящихся на 3:{total_sum}")
